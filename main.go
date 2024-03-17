@@ -9,7 +9,7 @@ import (
 func main() {
 	fmt.Println("Hi, this is go")
 
-	rows, err := db.Query("49.50.69.211", "Intel", "Admin@#1234", "WMT_Intel", 1433, "Select * FROM Countries")
+	rows, err := db.Query("my_server_name", "user_name", "password", "db_name", 1433, "Select * FROM Countries")
 
 	if err != nil {
 		fmt.Println("Error executing query:", err)
